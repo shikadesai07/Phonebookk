@@ -12,13 +12,13 @@
     <form id="updateForm" method="POST">
       <input type="hidden" name="id" id="updateId">
           <label>name</label>
-          <input type="text" placeholder="Enter Full Name" name="name" required>
+          <input type="text" placeholder="Enter Full Name" id="updateName" name="name" required>
           <label>contact</label>
-          <input type="number" placeholder="Enter contact" name="contact" required>
+          <input type="number" placeholder="Enter contact" id="updateContact" name="contact" required>
           <label>address</label>
-          <input type="address" placeholder="Enter  Address" name="address" required>
-          <label>City</label>
-          <input type="email" placeholder="Enter email" name="email" required>
+          <input type="address" placeholder="Enter  Address" id="updateAddress" name="address" required>
+          <label>Email</label>
+          <input type="email" placeholder="Enter email" id="updateEmail" name="email" required>
           <button type="submit" name="update">Submit</button>
     </form>
         </div>

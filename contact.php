@@ -131,7 +131,7 @@ th {
 </div>
 </table>
   <div class="input-group">
-  <a href="#demo" class"btn">Display Contacts</a>
+  <a href="#demo" class="btn">Display Contacts</a>
 
 
 
@@ -174,10 +174,11 @@ th {
         		<td><?php echo $rows['address']; ?></td>
             	<td><?php echo $rows['email']; ?></td>
 <td><input type="checkbox" name="records[]" value="<?php echo $rows['id'];?>"/></td>
-              <td><a href='javascript:void(0)' onclick='editData(".$rows['id'].")'>Edit</a></td>
+              <td><a href='javascript:void(0)' onclick="editData(<?php echo $rows['id'] ?>)">Edit</a></td></tr>
            <?php
         	   }
              ?>
+            </table>
 </div>
 <?php
 if(isset($_POST['submit1']))
@@ -196,5 +197,7 @@ header("Location:contact.php");
 
 
 </form>
+
+<div id="update-container"></div>
 </body>
 </html>
